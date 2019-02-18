@@ -1,0 +1,32 @@
+// imports
+
+@import "partials/base";
+
+// main
+// header
+
+.showcase {
+    &::after {
+    background: {
+        image: url("../images/showcase.jpeg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+        }
+
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+    transition: all 1000ms;
+    @include blur(5px);
+    }
+    &:hover::after {
+        @include blur(0px);
+    }
+}
+
+h1 {
+    position: absolute;
+    z-index: 1;
+}

@@ -1,0 +1,13 @@
+// Reset
+
+body, html, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+// mixins
+
+@mixin blur($value) {
+    filter: blur($value);
+    -webkit-filter: blur($value);
+}
