@@ -9,6 +9,31 @@ body {
   color: #fff;
 }
 
+.bg-light {
+  background-color: #eee;
+  color: #222;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.movie-box .btn {
+  display: block;
+  padding: 15px;
+  margin: 50px auto;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ff471a;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 /* Header */
 .showcase::after {
   background-image: url("../images/showcase.jpeg");
@@ -53,6 +78,10 @@ section {
 }
 section h2 {
   text-indent: 5%;
+  font-family: "Basic", sans-serif;
+}
+section .movie-box {
+  margin-bottom: 60px;
 }
 section h3 {
   text-indent: 15%;

@@ -5,10 +5,25 @@ body, html, ul, ol {
     padding: 0;
 }
 
+// General
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(1,1,1,0.9);
     color: #fff;
+}
+
+.bg-light {
+    background-color: #eee;
+    color: #222;
+}
+
+footer {
+    text-align: center;
+    padding: {
+        top: 1em;
+        bottom: 1em;
+    }
 }
 
 // mixins

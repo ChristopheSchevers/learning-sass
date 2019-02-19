@@ -1,5 +1,19 @@
 .movie-box {
     .btn {
-        
+        display: block;
+        padding: 15px;
+        margin: 50px auto;
+        width: 100px;
+        color: $btn-text;
+        text: {
+            decoration: none;
+            align: center;
+        }
+        background-color: $btn-color;
+        border-radius: 7px;
+        font: {
+            weight: bold;
+            size: 1.3rem;
+        }
     }
 }
