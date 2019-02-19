@@ -1,9 +1,12 @@
 // imports
 
 @import "partials/base";
+@import "partials/colors";
+@import "partials/typography";
+@import "partials/buttons";
 
-// main
 // header
+/* Header */
 
 .showcase {
     &::after {
@@ -26,7 +29,44 @@
     }
 }
 
+.showcase:hover {
+    h1 {
+        @include blur(2px)
+    }
+}
+
 h1 {
     position: absolute;
     z-index: 1;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    transition: all 1000ms;
+    color: $header-color;
+    font: {
+        family: $header-font;
+        size: $header-size;
+    }
+    text-align: center;
+}
+
+// main
+/* Main */
+
+section {
+    padding: 20px;
+
+    h2 {
+        text-indent: 5%;
+    }
+    h3 {
+        text-indent: 15%;
+    }
+    small {
+        font-style: italic;
+    }
+    p {
+        line-height: 1.4;
+    }
 }

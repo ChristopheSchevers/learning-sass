@@ -3,6 +3,13 @@ body, html, ul, ol {
   padding: 0;
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(1, 1, 1, 0.9);
+  color: #fff;
+}
+
+/* Header */
 .showcase::after {
   background-image: url("../images/showcase.jpeg");
   background-repeat: no-repeat;
@@ -21,9 +28,40 @@ body, html, ul, ol {
   -webkit-filter: blur(0px);
 }
 
+.showcase:hover h1 {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
 h1 {
   position: absolute;
   z-index: 1;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  height: auto;
+  transition: all 1000ms;
+  color: #ff0000;
+  font-family: "Monoton", cursive;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+/* Main */
+section {
+  padding: 20px;
+}
+section h2 {
+  text-indent: 5%;
+}
+section h3 {
+  text-indent: 15%;
+}
+section small {
+  font-style: italic;
+}
+section p {
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=main.css.map */

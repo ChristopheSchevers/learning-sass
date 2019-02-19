@@ -5,6 +5,12 @@ body, html, ul, ol {
     padding: 0;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(1,1,1,0.9);
+    color: #fff;
+}
+
 // mixins
 
 @mixin blur($value) {
