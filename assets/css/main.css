@@ -34,6 +34,28 @@ footer {
   font-size: 1.3rem;
 }
 
+.img-container {
+  max-width: 100%;
+  height: 143px;
+  margin-left: 20%;
+  margin-right: 20%;
+  overflow: hidden;
+}
+.img-container img {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 950px) {
+  .img-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Header */
 .showcase::after {
   background-image: url("../images/showcase.jpeg");
@@ -104,20 +126,6 @@ section p {
 .promo p {
   text-align: center;
 }
-.promo .img-container {
-  max-width: 100%;
-  height: 143px;
-  margin-left: 20%;
-  margin-right: 20%;
-  overflow: hidden;
-}
-.promo .img-container img {
-  display: block;
-  width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 @media only screen and (min-width: 950px) {
   .container {
@@ -143,11 +151,6 @@ section p {
   .promo {
     flex-grow: 1;
     width: 250px;
-  }
-  .promo .img-container {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
